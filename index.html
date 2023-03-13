@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <!--metadados, palavras chaves para o buscador do google indexar o site -->
     <meta charset="UTF-8">
@@ -11,20 +12,35 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
     <!-- Cabeçalho -->
-    <header>
+    <header id="inicio">
         <div class="Container"></div>
+        <div id="logo">
+            <img src="img/img4.jpg" alt="hal 9000">
+        </div>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check">&#x268c;</label>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#conteudo">Conteúdo</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+
+        </nav>
     </header>
     <!-- Destaque -->
     <main>
         <div class="Container">
             <h1>Banda Imperfection</h1>
-        <h1>Imperfection é uma banda Grunge Cristã, nascida em Belo Horizonte-MG</h1>
+            <h1>Imperfection é uma banda Grunge Cristã, nascida em Belo Horizonte-MG</h1>
         </div>
     </main>
     <!-- Sobre -->
-    <section>
+    <section id="sobre">
         <div class="Container">
             <h2>Som grunge de qualidade criado no Brasil</h2>
         </div>
@@ -42,7 +58,7 @@
         </div>
     </section>
     <!-- conteúdo -->
-    <section>
+    <section id="conteudo">
         <div class="Container">
             <h2>Conteúdo</h2>
             <h3>Galeria de fotos</h3>
@@ -51,10 +67,12 @@
         </div>
     </section>
     <!-- rodapé -->
-    <footer>
+    <footer id="contato">
         <div class="Container">
         </div>
     </footer>
+    <a href="#inicio" id="topo"><img src="img/topo.png" alt="topo do site"></a>
 
 </body>
+
 </html>
