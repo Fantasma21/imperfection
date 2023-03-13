@@ -3,6 +3,27 @@
  @aautor Emanuel Albuquerque
 */
 
+/* Importação (google fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/* CSS RESET*/
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+  body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+  }
+
+  /* Layout */
+  .Container {
+    margin: 0 auto;
+    background-color: rgb(189, 148, 148);
+  }
+
 /* Smartphone Portrait >>>>>>>>>>*/
 
 /* Smartphone Landscape >>>>>>>>>*/
@@ -10,22 +31,38 @@
     body{
         background-color: red;
     }
+    /* Layout */
+    .Container {
+        max-width: 540px;
+    }
 }
 /* Tablet Portrait >>>>>>>>>>>>>>*/
 @media (min-width:768px){
     body{
         background-color: rgb(25, 0, 255);
     }
+     /* Layout */
+     .Container {
+        max-width: 720px;
+}
 }
 /* Tablet Landscape >>>>>>>>>>>>>*/
 @media (min-width:992px){
     body{
         background-color: rgb(255, 230, 0);
     }
+     /* Layout */
+     .Container {
+        max-width: 960px;
+}
 }
 /* PC >>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width:1200px){
     body{
         background-color: rgb(9, 255, 0);
     }
+     /* Layout */
+     .Container {
+        max-width: 1140px;
+}
 }
