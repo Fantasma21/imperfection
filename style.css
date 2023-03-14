@@ -28,7 +28,17 @@ body {
 .Flex {
     display: flex;
     justify-content: space-between;
-    
+}
+
+.Botao {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: 700;
+    background-color: red;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    padding: 10px 30px;
 }
 
 /* topo do site */
@@ -46,10 +56,10 @@ header {
 }
 
 #logo img {
-    width: 120px;
-    height: 120px;
-    margin-top: 10px;
-    margin-left: 10px;
+    width: 200px;
+    height: 170px;
+    margin-top: -20px;
+    margin-left: 20px;
 }
 
 #check {
@@ -79,13 +89,35 @@ nav ul {
 }
 
 nav ul li {
-    padding: 15px;
+    padding: 20px;
     border-bottom: 1px solid #eee4e4;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: rgb(235, 235, 243);
+    color: #fff;
+}
+
+/* Destaque */
+main {
+    height: 75vh;
+    background: url(img/banner1.png);
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 2.5em;
+    margin-top: 30px;
+}
+
+main h2 {
+    font-size: 1em;
+    margin: 10px 0px 20px 0px;
 }
 
 /* Smartphone Landscape >>>>>>>>>*/
@@ -104,6 +136,20 @@ nav ul li a {
     .Container {
         max-width: 720px;
     }
+
+    /* Destaque */
+    main {
+        height: 45vh;
+    }
+
+    main h1 {
+        font-size: 4em;
+    }
+
+    main h2 {
+        font-size: 1em;
+    }
+
 }
 
 /* Tablet Landscape >>>>>>>>>>>>>*/
@@ -113,6 +159,12 @@ nav ul li a {
     .Container {
         max-width: 960px;
     }
+
+    /* Destaque */
+    main {
+        height: 70vh;
+    }
+
 }
 
 /* PC >>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -125,14 +177,13 @@ nav ul li a {
 
     /* Cabeçalho */
     header {
-        height: 120px;
+        height: 100px;
     }
 
     #logo img {
-        width: 170px;
-        height: 170px;
-        margin-top: 30px;
-        margin-left: 30px;
+        width: 400px;
+        height: 320px;
+        margin-top: -50px;
     }
 
     label {
@@ -143,7 +194,7 @@ nav ul li a {
         position: static;
         height: auto;
         background-color: transparent;
-        margin-top: 60px;
+        margin-top: 40px;
     }
 
     nav ul li {
