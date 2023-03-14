@@ -7,69 +7,156 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 /* CSS RESET*/
-*{
+* {
     margin: 0;
     border: 0;
     padding: 0;
 }
 
-  body {
+body {
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
-  }
+}
 
-  /* Layout */
-  .Container {
+/* Layout */
+.Container {
     margin: 0 auto;
-    background-color: rgb(214, 193, 193);
-  }
+    
+}
 
- /* topo do site */
- #topo {
+/* posicionar cabeçalho */
+.Flex {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+/* topo do site */
+#topo {
     position: fixed;
     right: 10px;
     bottom: 10px;
- }
+}
 
 /* Smartphone Portrait >>>>>>>>>>*/
 
+/* Cabeçalho */
+header {
+    height: 60px;
+}
+
+#logo img {
+    width: 120px;
+    height: 120px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#check {
+    display: none;
+}
+
+label {
+    font-size: 3em;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    background-color: rgba(71, 71, 68, 0.884);
+    height: 100vh;
+    position: fixed;
+    top: 60px;
+    /* esconder o menu */
+    right: -100%;
+    width: 100%;
+    transition: all 0.5s;
+}
+
+/* trazer o menu de volta */
+#check:checked ~ ul {
+    right: 0;
+}
+
+nav ul li {
+    padding: 15px;
+    border-bottom: 1px solid #eee4e4;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(235, 235, 243);
+}
+
 /* Smartphone Landscape >>>>>>>>>*/
-@media (min-width:576px){
-    body{
-        background-color: red;
-    }
+@media (min-width:576px) {
+
     /* Layout */
     .Container {
         max-width: 540px;
     }
 }
+
 /* Tablet Portrait >>>>>>>>>>>>>>*/
-@media (min-width:768px){
-    body{
-        background-color: rgb(25, 0, 255);
-    }
-     /* Layout */
-     .Container {
+@media (min-width:768px) {
+
+    /* Layout */
+    .Container {
         max-width: 720px;
+    }
 }
-}
+
 /* Tablet Landscape >>>>>>>>>>>>>*/
-@media (min-width:992px){
-    body{
-        background-color: rgb(255, 230, 0);
-    }
-     /* Layout */
-     .Container {
+@media (min-width:992px) {
+
+    /* Layout */
+    .Container {
         max-width: 960px;
-}
-}
-/* PC >>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-@media (min-width:1200px){
-    body{
-        background-color: rgb(9, 255, 0);
     }
-     /* Layout */
-     .Container {
-        max-width: 1140px;
 }
+
+/* PC >>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+@media (min-width:1200px) {
+
+    /* Layout */
+    .Container {
+        max-width: 1140px;
+    }
+
+    /* Cabeçalho */
+    header {
+        height: 120px;
+    }
+
+    #logo img {
+        width: 170px;
+        height: 170px;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+
+    label {
+        display: none;
+    }
+
+    nav ul {
+        position: static;
+        height: auto;
+        background-color: transparent;
+        margin-top: 60px;
+    }
+
+    nav ul li {
+        float: left;
+        border: 0;
+    }
+
+    nav ul li a {
+        color: rgb(68, 67, 65);
+    }
+
+    nav ul li a:hover {
+        color: rgba(155, 23, 6, 0.733);
+    }
+
 }
