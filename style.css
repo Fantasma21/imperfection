@@ -46,6 +46,17 @@ body {
     justify-content: space-evenly;
 }
 
+.Flex5 {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.Flex6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 .Botao {
     text-decoration: none;
     color: #fff;
@@ -253,6 +264,47 @@ main h2 {
     text-align: center;
 }
 
+/* rodapé */
+address {
+    padding: 35px 10px 50px 10px;
+    background: url(img/backGuitar.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+address a {
+    text-decoration: none;
+    color: #fff;
+}
+
+address img {
+    padding-top: 15px;
+}
+
+#iconeLocal {
+    display: none;
+}
+
+#dados {
+    margin: 30px 0px 15px 0px;
+}
+
+#googleMaps {
+    display: none;
+}
+
+footer {
+    padding: 30px;
+    background-color: #343538;
+    color: #fff;
+    text-align: center;
+}
+
+#social {
+    margin-bottom: 25px;
+}
+
 /* Smartphone Landscape >>>>>>>>>*/
 @media (min-width:576px) {
 
@@ -271,6 +323,17 @@ main h2 {
     #video iframe {
         width: 560px;
         height: 315px;
+    }
+
+    /* rodapé */
+    .Flex5 {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #social {
+        margin: 0;
     }
 }
 
@@ -395,6 +458,23 @@ main h2 {
         width: 150px;
         height: 150px;
         border-left: 200px;
+    }
+
+    /* rodapé */
+    #iconeLocal {
+        display: inline ;
+    }
+
+    #iconeMapa {
+        display: none;
+    }
+
+    #googleMaps {
+        display: inline;
+    }
+
+    .Flex6 {
+        flex-direction: row-reverse;
     }
 
 }
