@@ -40,6 +40,12 @@ body {
     flex-direction: column;
 }
 
+.Flex4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
 .Botao {
     text-decoration: none;
     color: #fff;
@@ -58,6 +64,35 @@ body {
     bottom: 10px;
 }
 
+/* Cartões */
+.Card {
+    margin-top: 25px;
+    width: 280px;
+    height: 520px;
+    background-color: #e8e8e8;
+    border: 1px solid#a1a1a1;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.Card img {
+    border-radius: 25px 25px 0px 0px;
+}
+
+.Card h3 {
+    margin-top: 15px;
+}
+
+.Card p {
+    text-align: left;
+    color: #434343;
+    padding: 10px 10px 20px 20px;
+}
+
+.Card a {
+    padding: 6px 20px;
+}
+
 /* Smartphone Portrait >>>>>>>>>>*/
 
 /* Cabeçalho */
@@ -68,7 +103,7 @@ header {
 #logo img {
     width: 128px;
     height: 128px;
-    
+
 }
 
 #check {
@@ -178,6 +213,46 @@ main h2 {
     border: 0;
 }
 
+/* pdf/qrcode */
+#pdfqr {
+    padding: 50px 0px;
+    background: url(img/backGuitar.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#textopdf {
+    color: #fff;
+    padding: 0px 10px;
+}
+
+#textopdf h2 {
+    margin-bottom: 10px;
+}
+
+#textopdf p {
+    margin-bottom: 40px;
+}
+
+/* fazer sumir parte de um texto em dispositivos móveis */
+#textopdf span {
+    display: none;
+}
+
+#qrcode {
+    display: none;
+}
+
+/* Conteúdo */
+#conteudo {
+    padding: 50px 0px;
+}
+
+#conteudo h2 {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
 /* Smartphone Landscape >>>>>>>>>*/
 @media (min-width:576px) {
 
@@ -187,7 +262,8 @@ main h2 {
     }
 
     /* Destaque */
-    main h1, main h2 {
+    main h1,
+    main h2 {
         text-shadow: #000 0.05em 0.05em 0.05em;
     }
 
@@ -301,5 +377,24 @@ main h2 {
         align-items: center;
     }
 
+    /* pdf/qrcode */
+    #pdfqr {
+        background-attachment: fixed;
+    }
+
+    #pdfqr span {
+        display: inline;
+        text-decoration: underline;
+    }
+
+    #qrcode {
+        display: inline;
+    }
+
+    #qrcode img {
+        width: 150px;
+        height: 150px;
+        border-left: 200px;
+    }
 
 }
