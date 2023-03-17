@@ -13,6 +13,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
@@ -104,7 +108,7 @@ body {
     padding: 6px 20px;
 }
 
-/* Smartphone Portrait >>>>>>>>>>*/
+/* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 /* Cabeçalho */
 header {
@@ -172,7 +176,7 @@ main {
 
 main h1 {
     font-size: 2.5em;
-    margin-top: 30px;
+    
 }
 
 main h2 {
@@ -298,14 +302,20 @@ footer {
     padding: 30px;
     background-color: #343538;
     color: #fff;
+    font-size: 0.875em;
     text-align: center;
 }
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+  }
 
 #social {
     margin-bottom: 25px;
 }
 
-/* Smartphone Landscape >>>>>>>>>*/
+/* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width:576px) {
 
     /* Layout */
@@ -317,6 +327,11 @@ footer {
     main h1,
     main h2 {
         text-shadow: #000 0.05em 0.05em 0.05em;
+    }
+
+    main h1 {
+        font-size: 2.5em;
+        margin-top: 60px;
     }
 
     /* One page */
@@ -337,7 +352,7 @@ footer {
     }
 }
 
-/* Tablet Portrait >>>>>>>>>>>>>>*/
+/* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width:768px) {
 
     /* Layout */
@@ -360,7 +375,7 @@ footer {
 
 }
 
-/* Tablet Landscape >>>>>>>>>>>>>*/
+/* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width:992px) {
 
     /* Layout */
@@ -375,7 +390,7 @@ footer {
 
 }
 
-/* PC >>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width:1200px) {
 
     /* Layout */
@@ -431,7 +446,7 @@ footer {
 
     #destaqueSobre img {
         border-radius: 50%;
-        margin-right: 10px;
+        margin-right: 50px;
     }
 
     /* One page */
@@ -461,20 +476,34 @@ footer {
     }
 
     /* rodapé */
-    #iconeLocal {
-        display: inline ;
-    }
-
-    #iconeMapa {
-        display: none;
-    }
-
-    #googleMaps {
-        display: inline;
-    }
-
     .Flex6 {
         flex-direction: row-reverse;
-    }
+      }
+    
+      address {
+        padding-top: 50px;
+        
+      }
+    
+      #iconeLocal {
+        display: inline;
+        
+      }
+    
+      #iconeMapa {
+        display: none;
+      }
+    
+      #googleMaps {
+        display: inline;
+        padding: 10px;
+      }
 
+      #contato img {
+        padding-right: 170px;
+      }
+
+      .endereco {
+        padding: 10px;
+      }
 }
